@@ -1,0 +1,18 @@
+<!-- ####sign up##### -->
+
+
+<%= form_for User.new do |f| %>
+	<%= f.label :fname, "First Name" %>
+	<%= f.text_field :fname %>
+	<%= f.label :lname, 'Last Name'%>
+	<%= f.text_field :lname %>
+	<%= f.label :username, "Username" %>
+	<%= f.text_field :username %>
+	<%= f.label :password, "Password" %>
+	<%= f.text_field :password %>
+	<%= f.label :email, "Email" %>
+	<%= f.text_field :email %>
+	<%= f.submit %>
+		<% end %>
+
+	

@@ -1,0 +1,12 @@
+<!-- ###create mini profile for someone in need#### -->
+
+<%= form_for Homeless.new do |f| %>
+	<%= f.label :street_number, "Street Number" %>
+	<%= f.text_field :street_number %>
+	<%= f.label :street, "Street" %>
+	<%= f.text_field :street %>
+	<%= f.label :items_list, "Items" %>
+	<%= f.text_field :items_list %>
+	<%= f.submit %>
+
+	<% end %>
