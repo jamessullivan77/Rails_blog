@@ -40,7 +40,7 @@ function initializeMap(location){
 
     	var mapsOptions = {
     		center: currentLocation,
-    		zoom: 15,
+    		zoom: 20,
     		mapTypeId: google.maps.MapTypeId.ROADMAP
     	};
 

@@ -3,21 +3,26 @@ Rails.application.routes.draw do
  
  ###is the main sign in and sign up page###
  	resources :users
+	resources :homelesses
+ 	
+
  	get '/' => 'users#index'
 
-	resources :users 
 	get '/sign_up' => 'users#sign_up'
 	post '/login' => 'sessions#create'
 
-	resources :homepage
+	get '/login' => 'sessions#new'
+
 	get '/homepage' => 'homepage#index'
 
-	resources :mapper
-	get '/mapper' => 'homepage#mapper'
 
-	resources :homelesses
-	get '/homeless' => 'homeless#homepage'
-	# post '/homepage' => 'homeless#create'
+	get '/homeless' => 'homelesses#new'
+	post '/homeless' => 'homelesses#create'
+
+	# get '/show' => 'users#show'
+	
+	
+
 
 end
 
