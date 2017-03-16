@@ -1,4 +1,4 @@
-class HomepageController < ApplicationController
+(class HomepageController < ApplicationController
 	def index 
 		 @user = User.find(session[:user_id]) 
 

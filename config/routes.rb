@@ -5,21 +5,24 @@ Rails.application.routes.draw do
  	resources :users
 	resources :homelesses
  	
-
+###########################
+#home
+###########################
  	get '/' => 'users#index'
-
+ 	get '/homepage' => 'homepage#index'
+###########################
+#sign_up/sing_in
+###########################
 	get '/sign_up' => 'users#sign_up'
 	post '/login' => 'sessions#create'
-
 	get '/login' => 'sessions#new'
-
-	get '/homepage' => 'homepage#index'
-
-
+###########################
+#finding/creating a pin for a homeless person
+###########################
 	get '/homeless' => 'homelesses#new'
 	post '/homeless' => 'homelesses#create'
 
-	# get '/show' => 'users#show'
+
 	
 	
 
