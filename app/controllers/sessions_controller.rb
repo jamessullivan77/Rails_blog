@@ -1,4 +1,4 @@
-Iclass SessionsController < ApplicationController
+class SessionsController < ApplicationController
   def create 
   	@user = User.where(username: params[:username]).first
   	p params, @user
