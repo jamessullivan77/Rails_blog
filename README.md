@@ -1,26 +1,7 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-# Rails_blog
-# Rails_blog
+Created with Ruby on Rails. 
+First version of the Helping Hands App. 
+Allows the user to input the address, street, city and item for a homeless person in need. 
+Created solo, this project was expanded upon during for the Agency Week Project.
+Ruby and Javascript heavy, uses Google Maps API for marking current location. 
